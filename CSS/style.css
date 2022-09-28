@@ -1,0 +1,118 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: quicksand, sans-serif;
+}
+
+body {
+    color: #ffffff;
+    background-color: #06567f;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.preheader {
+    margin: 4px;
+}
+
+h1 {
+    font-size: 250%;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 175%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    color: #f7f7f7;
+    /*background-color: #a3193c;*/
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+}
+
+.booktile {
+    width: 100%;
+    color: #1c1263;
+    background-color: #f7f3de;
+    display: grid;
+    grid-template-rows: auto auto;
+    border: 1px solid #2a3749;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 5px 5px 5px 5px #2a3749;
+}
+
+.titleandauthor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0.2rem 0.2rem;
+    align-items: baseline;
+}
+
+.booktitle {
+    text-transform: uppercase;
+}
+
+.bookcover {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coverandfacts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 1em;
+}
+
+.facts {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 0.5em;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.facts p {
+    margin-bottom: 0;
+}
+
+.bookmoreinfo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.2rem;
+}
+
+
+
