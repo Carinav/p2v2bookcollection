@@ -17,9 +17,9 @@ a {
 
 img {
     width: 50%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: block;
 }
 
 .preheader {
@@ -64,13 +64,13 @@ p {
     width: 100%;
     color: #1c1263;
     background-color: #f7f3de;
+    margin-bottom: 2rem;
+    border: 1px solid #2a3749;
+    border-radius: 10px;
+    box-shadow: 0.5em 0.5em 1em 1em #2a3749;
+    padding: 1rem 2rem;
     display: grid;
     grid-template-rows: auto auto;
-    border: 1px solid #2a3749;
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-    box-shadow: 0.5em 0.5em 1em 1em #2a3749;
 }
 
 .booktitle {
@@ -86,10 +86,10 @@ p {
 
 .facts {
     width: 100%;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     column-gap: 0.5em;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 1;
 }
