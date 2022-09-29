@@ -9,7 +9,7 @@ class functions extends TestCase
 
     // Testing generateTile Function
 
-    public function test_GivenArray_GeneratesTile()
+    public function test_GenerateTile_GivenArray_GeneratesTile()
     {
         $input = [[
             'title' => 'test',
@@ -74,7 +74,7 @@ class functions extends TestCase
         $this->assertEquals($expected, $result);
     }
 
-    public function test_NoArraysCounted_ThrowError()
+    public function test_GenerateTile_NoArraysCounted_ThrowError()
     {
         $input = [];
         $this->expectException(Exception::class);
@@ -83,7 +83,7 @@ class functions extends TestCase
         $result = generateTile($input);
     }
 
-    public function test_NoValues_ThrowError()
+    public function test_GenerateTile_NoValues_ThrowError()
     {
         $input = [
             'title',
@@ -107,7 +107,7 @@ class functions extends TestCase
 
     // Testing formatFiction Function
 
-    public function test_Given1ReturnsFiction()
+    public function test_FormatFiction_Given1ReturnsFiction()
     {
         $input = 1;
         $expected = 'Fiction';
@@ -117,7 +117,7 @@ class functions extends TestCase
         $this->assertEquals($expected, $result);
     }
 
-    public function test_Given0ReturnsNonFiction()
+    public function test_FormatFiction_Given0ReturnsNonFiction()
     {
         $input = 0;
         $expected = 'Non-Fiction';
@@ -127,7 +127,7 @@ class functions extends TestCase
         $this->assertEquals($expected, $result);
     }
 
-    public function test_StringInput_ThrowError()
+    public function test_FormatFiction_StringInput_ThrowError()
     {
         $input = [''];
         $this->expectException(TypeError::class);
@@ -137,7 +137,7 @@ class functions extends TestCase
 
     // Testing formatOwnVoices Function
 
-    public function test_Given1ReturnsYes()
+    public function test_FormatOwnVoices_Given1ReturnsYes()
     {
         $input = 1;
         $expected = 'Yes';
@@ -147,7 +147,7 @@ class functions extends TestCase
         $this->assertEquals($expected, $result);
     }
 
-    public function test_Given0ReturnsNo()
+    public function test_FormatOwnVoices_Given0ReturnsNo()
     {
         $input = 0;
         $expected = 'No';
@@ -157,7 +157,7 @@ class functions extends TestCase
         $this->assertEquals($expected, $result);
     }
 
-    public function test_StringInputOwnVoices_ThrowError()
+    public function test_FormatOwnVoices_StringInputOwnVoices_ThrowError()
     {
         $input = [''];
         $this->expectException(TypeError::class);
