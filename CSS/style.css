@@ -1,0 +1,174 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: quicksand, sans-serif;
+}
+
+body {
+    color: #ffffff;
+    background-color: #06567f;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.preheader {
+    margin: 4px;
+}
+
+h1 {
+    font-size: 300%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 175%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    color: #f7f7f7;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+}
+
+.intro {
+    padding-bottom: 3rem;
+}
+
+.ownvoices {
+    font-style: italic;
+}
+
+.booktile {
+    width: 100%;
+    color: #1c1263;
+    background-color: #f7f3de;
+    margin-bottom: 2rem;
+    border: 1px solid #2a3749;
+    border-radius: 10px;
+    box-shadow: 0.5em 0.5em 1em 1em #2a3749;
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.booktitle {
+    text-transform: uppercase;
+}
+
+.bookcover {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+
+.facts {
+    width: 100%;
+    justify-content: center;
+    column-gap: 0.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.facts p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 50%;
+}
+
+.allfacts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bookmoreinfo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.2rem;
+}
+
+footer {
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 800px) {
+
+    .intro {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .tileflex {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .booktile {
+        width: 47%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .booktitle, .bookauthor {
+        grid-column: 1 / 3 ;
+    }
+
+    .booktitle {
+        align-self: end;
+    }
+
+    .bookauthor {
+        align-self: start;
+    }
+
+    .allfacts {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        align-self: center;
+    }
+
+    .facts {
+        justify-content: left;
+    }
+
+    .facts p {
+        line-height: 100%;
+        text-align: left;
+    }
+
+    .bookmoreinfo {
+        grid-row-start: 4;
+        grid-column: 1 / 3 ;
+        align-self: end;
+    }
+}
