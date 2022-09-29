@@ -22,7 +22,19 @@
     </section>
 
     <div class="intro">
-        <p>information about the page and what different terms mean</p>
+        <p>
+            I love reading, but over the last few years I have realised that I hadn't been reading from a diverse
+            enough range of creators. So I decided to keep track of what I'm reading and who wrote it!
+        </p>
+        <p>
+            My Library is keeping track of the country of origin of the books I've read, the gender of
+            the creator, and if the book is OwnVoices or not.
+        </p>
+        <p class="ownvoices">
+            What does OwnVoices mean? OwnVoices is a hashtag and category coined in 2015 by author
+            Corinne Duyvis. It is used to indicate "books where the protagonist and the author share a
+            marginalized identity".
+        </p>
     </div>
 
     <div class="tileflex">
