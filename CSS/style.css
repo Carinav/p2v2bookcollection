@@ -100,7 +100,7 @@ p {
     line-height: 50%;
 }
 
-.allfacts{
+.allfacts {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -151,7 +151,7 @@ footer {
         align-self: start;
     }
 
-    .allfacts{
+    .allfacts {
         grid-column-start: 2;
         grid-row-start: 3;
         align-self: center;
