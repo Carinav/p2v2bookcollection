@@ -27,8 +27,9 @@ img {
 }
 
 h1 {
-    font-size: 250%;
+    font-size: 300%;
     margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -45,11 +46,18 @@ p {
 .header {
     width: 100%;
     color: #f7f7f7;
-    /*background-color: #a3193c;*/
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding: 0.5rem;
+}
+
+.intro {
+    padding-bottom: 3rem;
+}
+
+.ownvoices {
+    font-style: italic;
 }
 
 .booktile {
@@ -62,7 +70,7 @@ p {
     padding: 1rem 2rem;
     border-radius: 10px;
     margin-bottom: 2rem;
-    box-shadow: 5px 5px 5px 5px #2a3749;
+    box-shadow: 0.5em 0.5em 1em 1em #2a3749;
 }
 
 .booktitle {
@@ -73,36 +81,30 @@ p {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.coverandfacts {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    column-gap: 1em;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-
+    align-self: center;
 }
 
 .facts {
     width: 100%;
     display: flex;
-    list-style: none;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     column-gap: 0.5em;
     flex-wrap: wrap;
     flex-grow: 1;
-    margin-left: 0;
-    margin-bottom: 0;
-    padding: 0;
 }
 
 .facts p {
-    margin-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 50%;
+}
+
+.allfacts{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .bookmoreinfo {
@@ -111,18 +113,27 @@ p {
     margin-top: 0.2rem;
 }
 
+footer {
+    padding-bottom: 3rem;
+}
+
 @media (min-width: 800px) {
+
+    .intro {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 
     .tileflex {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        column-gap: 1em;
+        justify-content: space-between;
     }
 
     .booktile {
-        width: 32%;
+        width: 47%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto auto;
@@ -144,6 +155,15 @@ p {
         grid-column-start: 2;
         grid-row-start: 3;
         align-self: center;
+    }
+
+    .facts {
+        justify-content: left;
+    }
+
+    .facts p {
+        line-height: 100%;
+        text-align: left;
     }
 
     .bookmoreinfo {
