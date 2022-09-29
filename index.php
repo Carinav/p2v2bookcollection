@@ -1,3 +1,7 @@
+<?php
+    require_once 'functions.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en-GB">
 
@@ -12,7 +16,7 @@
 </head>
 
 <body>
-    <section class="header">
+    <section class="header" id="returntohead">
         <p class="preheader">Welcome to the</p>
         <h1 class="pagetitle">THE LIBRARY</h1>
     </section>
@@ -21,50 +25,16 @@
         <p>information about the page and what different terms mean</p>
     </div>
 
-    <div class="booktile">
-
-        <div class="titleandauthor">
-            <div class="booktitle">
-                <h3>Waiting for the Flood</h3>
-            </div>
-
-            <div class="bookauthor">
-                <p>by Alexis Hall</p>
-            </div>
-        </div>
-
-        <div class="coverandfacts">
-            <img class="bookcover"
-                 src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1531104889i/40755393.jpg"
-                 alt="Cover of Waiting for the Flood">
-
-            <ul class="facts">
-                <li>Paperback</li>
-                <li>112 pages</li>
-                <li>Fiction</li>
-            </ul>
-
-            <ul class="facts">
-                <li>Originally Published in 2015</li>
-                <li>UK</li>
-            </ul>
-
-            <div class="facts">
-                <p>Creator Gender: Male</p>
-            </div>
-
-            <div class="facts">
-                <p>Ownvoices: Yes</p>
-            </div>
-
-        </div>
-
-        <div class="bookmoreinfo">
-            <p>
-                <a href="https://www.goodreads.com/book/show/40755393-waiting-for-the-flood"
-                   target="_blank">Find out more on goodreads</a>
-            </p>
-        </div>
-
+    <div class="tileflex">
+        <?php
+            $pdo = connectToDatabase();
+            $books = extractFromDB($pdo);
+            echo generateTile($books);
+        ?>
     </div>
+
+    <footer>
+        <p><a href="#returntohead">Back to top</a></p>
+    </footer>
+
 </body>
